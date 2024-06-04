@@ -10,12 +10,11 @@ go 1.22
 // 第三方依赖
 require (
 	github.com/gin-gonic/gin v1.10.0
-	// dependency latest
+	github.com/goproxy/goproxy v0.16.9
 )
 
 // 排除以来继承里不需要的依赖
 exclude (
-	// dependency latest
 )
 
 // 修改依赖包的路径

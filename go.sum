@@ -1,1 +1,2 @@
 github.com/gin-gonic/gin v1.10.0/go.mod h1:4PMNQiOhvDRa013RKVbsiNwoyezlm2rm0uX/T7kzp5Y=
+github.com/goproxy/goproxy v0.16.9/go.mod h1:Ijz+HVKTF3etWaos8h604bRMqukw21In3AhI3uDBj9U=
