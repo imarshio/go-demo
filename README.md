@@ -293,7 +293,17 @@ interface
 map
 ```
 
-## Go 变量声明
+## Go 变量
+
+Go 变量声明遵循如下公式：
+
+`var name type = value`
+
+Go 同样支持如下声明方式，Go会在编译时自动推导变量类型
+
+`name := value`
+
+至于为什么Go 在变量声明的时候将类型放在名称后面，请看[Go's Declaration Syntax](https://go.dev/blog/declaration-syntax).
 
 ```go
 package main
@@ -305,6 +315,8 @@ var num1 = 10
 var name = "demo"
 
 func main() {
+
+	var num2 int = 10
 	a := 10
 	fmt.Println(a)
 	fmt.Println(num1 + 1)
@@ -313,7 +325,7 @@ func main() {
 
 ```
 
-## Go 函数声明
+## Go 函数
 
 ### main function
 
@@ -381,5 +393,10 @@ Go语言在1.18版本中增加了泛型功能。
 - 支持泛型方法，只能通过recover来实现方法的泛型处理
 - ～后的类型必须为基本类型，不能为接口类型
 
-## Go 结构体声明
+## Go 指针
 
+声明一个指针的方式如下：
+
+`var num1 = &num`
+
+## Go 结构体

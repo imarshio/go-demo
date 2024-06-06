@@ -106,8 +106,8 @@ type CustomNumberType interface {
 	// ～ 表示支持int64及其衍生类型
 	// ｜ 表示去并集
 	// 多行之间取交集
-	uint8 | int32 | float64 | ~int64 | int | DerivativeInt64
-	uint16 | int32 | float64 | ~int64 | int | AliasInt32
+	uint8 | int32 | float64 | int64 | int | DerivativeInt64
+	uint16 | float64 | ~int64 | int | AliasInt32
 }
 
 // DerivativeInt64 int64的衍生类型

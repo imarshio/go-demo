@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func demo_byte() {
 	// 英文字符
 	var s byte = 'a'
 	// 直接输出会输出这个字符的码值
@@ -23,8 +23,4 @@ func main() {
 	fmt.Printf("输出字符： %c\n", n)
 	fmt.Printf("输出字符类型： %T\n", n)
 
-	// go 语言的编码统一都是utf-8
-	var name = "demo"
-	fmt.Printf("hello %s\n", name)
-	fmt.Printf("hello %T\n", name)
 }

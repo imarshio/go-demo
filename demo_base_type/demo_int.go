@@ -1,13 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"unsafe"
+)
 
-func main() {
-	// 基础类型 演示
-	demo_int()
-}
+func DemoInt() {
 
-func demo_int() {
+	var num int64 = 20
+	fmt.Printf("the type of num is %T\n", num)
+	fmt.Printf("the size of num is %d\n", unsafe.Sizeof(num))
 
 	// go 默认整数数值类型为int
 	var num0 = 10
@@ -18,6 +20,7 @@ func demo_int() {
 	var num1 int = 10
 	fmt.Println("num1 =", num1)
 	fmt.Printf("the type of num1 is %T\n", num1)
+	fmt.Printf("the size of num1 is %d bytes\n", unsafe.Sizeof(num1))
 
 	// 8代表一个字节 int8 表示有符号支持八个字节的数字
 	// 最大为 0111 1111 =
