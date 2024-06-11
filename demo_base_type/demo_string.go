@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
 
@@ -23,4 +26,14 @@ func main() {
 		"abc" + "def"
 
 	fmt.Println(concat_a)
+
+	// 将 int 类型转成 string
+	var num1 int = 20
+	var str string = fmt.Sprintf("%d", num1)
+	fmt.Printf("convert result str = %s, the type of str is %T\n", str, str)
+
+	// 将 string 类型转成 int
+	var num2, _ = strconv.ParseInt(str, 10, 64)
+	fmt.Printf("convert result num2 = %d, the type of str is %T", num2, int8(num2))
+
 }
